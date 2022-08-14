@@ -1,9 +1,9 @@
-package uz.jl.examples;
+package me.bekzod.examples;
 
 
 import org.junit.jupiter.api.Test;
-import uz.jl.beans.Person;
-import uz.jl.mockdata.MockData;
+import me.bekzod.beans.Person;
+import me.bekzod.mockdata.MockData;
 
 import java.util.List;
 import java.util.OptionalInt;

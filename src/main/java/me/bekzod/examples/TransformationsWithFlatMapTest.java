@@ -1,4 +1,4 @@
-package uz.jl.examples;
+package me.bekzod.examples;
 
 
 import org.junit.jupiter.api.BeforeEach;

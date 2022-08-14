@@ -1,26 +1,31 @@
-package uz.jl.examples;
-
+package me.bekzod.examples;
 
 import org.junit.jupiter.api.Test;
-import uz.jl.beans.Person;
-import uz.jl.beans.PersonDto;
-import uz.jl.mockdata.MockData;
+import me.bekzod.beans.Person;
+import me.bekzod.mockdata.MockData;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
-public class HowStreamsWorkTest {
+public class UnderstandingStreamsTest {
+
     @Test
-    public void understandingCollect() throws Exception {
-        List<PersonDto> emails = MockData.getPeople()
+    void collect() throws IOException {
+        List<String> emails = MockData.getPeople()
                 .stream()
-                .map(Person::mapmeplease)
-                .toList();
-
+                .map(Person::getEmail)
+                .collect(
+                        ArrayList::new,
+                        ArrayList::add,
+                        ArrayList::addAll
+                );
         emails.forEach(System.out::println);
     }
 
     @Test
-    public void intermediateAndTerminalOperations() throws Exception {
+    public void lazy() throws Exception {
         System.out.println(
                 MockData.getCars()
                         .stream()
@@ -36,6 +41,7 @@ public class HowStreamsWorkTest {
                             System.out.println("mapping price " + price);
                             return price + (price * .14);
                         })
-                        .toList());
+                        .collect(Collectors.toList())
+        );
     }
 }

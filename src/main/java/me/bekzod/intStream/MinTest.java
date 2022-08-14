@@ -1,4 +1,4 @@
-package uz.jl.intStream;
+package me.bekzod.intStream;
 
 import org.junit.jupiter.api.Test;
 

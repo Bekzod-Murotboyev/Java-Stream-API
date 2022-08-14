@@ -1,12 +1,12 @@
-package uz.jl.mockdata;
+package me.bekzod.mockdata;
 
 
 import com.google.common.io.Resources;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import org.apache.commons.io.IOUtils;
-import uz.jl.beans.Car;
-import uz.jl.beans.Person;
+import me.bekzod.beans.Car;
+import me.bekzod.beans.Person;
 
 import java.io.IOException;
 import java.io.InputStream;

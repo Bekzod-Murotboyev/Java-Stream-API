@@ -1,4 +1,4 @@
-package uz.jl.beans;
+package me.bekzod.beans;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

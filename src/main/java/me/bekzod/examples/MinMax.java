@@ -1,10 +1,10 @@
-package uz.jl.examples;
+package me.bekzod.examples;
 
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Test;
-import uz.jl.beans.Car;
-import uz.jl.beans.Person;
-import uz.jl.mockdata.MockData;
+import me.bekzod.beans.Car;
+import me.bekzod.beans.Person;
+import me.bekzod.mockdata.MockData;
 
 import java.io.IOException;
 import java.util.Comparator;

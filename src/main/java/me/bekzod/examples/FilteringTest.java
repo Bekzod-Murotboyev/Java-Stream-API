@@ -1,8 +1,8 @@
-package uz.jl.examples;
+package me.bekzod.examples;
 
 import org.junit.jupiter.api.Test;
-import uz.jl.beans.Car;
-import uz.jl.mockdata.MockData;
+import me.bekzod.beans.Car;
+import me.bekzod.mockdata.MockData;
 
 import java.util.Arrays;
 import java.util.List;

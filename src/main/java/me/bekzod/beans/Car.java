@@ -1,4 +1,4 @@
-package uz.jl.beans;
+package me.bekzod.beans;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

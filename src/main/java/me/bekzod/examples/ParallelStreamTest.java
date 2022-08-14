@@ -1,4 +1,4 @@
-package uz.jl.examples;
+package me.bekzod.examples;
 
 import lombok.SneakyThrows;
 import org.assertj.core.api.Assertions;
