@@ -39,7 +39,7 @@ public class TransformationsWithFlatMapTest {
         Stream<Stream<String>> streamStream = arrayListOfNames
                 .stream()
                 .map(List::stream);
-//        Stream<String> stringStream = arrayListOfNames.stream().flatMap(List::stream);
+        Stream<String> stringStream = arrayListOfNames.stream().flatMap(List::stream);
         Stream<String> names = arrayListOfNames.stream()
                 .flatMap(List::stream);
         List<String> strings = names.toList();

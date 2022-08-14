@@ -20,7 +20,7 @@ public class ParallelStreamTest {
 
     @SneakyThrows
     @Test
-    void custome() {
+    void custom() {
         List<Integer> listOfNumbers = Arrays.asList(1, 2, 3, 4);
         ForkJoinPool customThreadPool = new ForkJoinPool(2);
         int sum = customThreadPool.submit(

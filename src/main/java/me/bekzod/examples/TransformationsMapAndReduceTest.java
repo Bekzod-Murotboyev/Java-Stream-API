@@ -54,14 +54,14 @@ public class TransformationsMapAndReduceTest {
         int[] integers = {1, 2, 3, 4, 99};
         int sum = Arrays.stream(integers).reduce(1, Integer::sum);
 
-//        System.out.println("dd");
-//
-//        int sub = Arrays.stream(integers).reduce(3, (a, b) -> {
-//            System.out.println(a);
-//            return a - b;
-//        });
+        System.out.println("dd");
+
+        int sub = Arrays.stream(integers).reduce(3, (a, b) -> {
+            System.out.println(a);
+            return a - b;
+        });
         System.out.println(sum);
-//        System.out.println(sub);
+        System.out.println(sub);
     }
 }
 

@@ -1,8 +1,8 @@
 package me.bekzod.examples;
 
-import org.junit.jupiter.api.Test;
 import me.bekzod.beans.Car;
 import me.bekzod.mockdata.MockData;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -43,7 +43,7 @@ public class FilteringTest {
     }
 
     @Test
-    public void takeWhile() throws Exception {
+    public void takeWhile() {
         // using filter
         System.out.println("using filter");
         Stream.of(2, 4, 6, 8, 9, 10, 12).filter(n -> n % 2 == 0)
@@ -57,7 +57,7 @@ public class FilteringTest {
     }
 
     @Test
-    public void findFirst() throws Exception {
+    public void findFirst() {
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int result = Arrays.stream(numbers)
                 .filter(n -> n == 50)
@@ -68,7 +68,7 @@ public class FilteringTest {
     }
 
     @Test
-    public void findAny() throws Exception {
+    public void findAny() {
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 10};
         int result = Arrays.stream(numbers).filter(n -> n % 2 == 0)
                 .findAny()
@@ -77,7 +77,7 @@ public class FilteringTest {
     }
 
     @Test
-    public void allMatch() throws Exception {
+    public void allMatch()  {
         int[] even = {2, 4, 6, 9, 8,10};
         IntPredicate intPredicate = n -> n % 2 == 0;
 
@@ -87,7 +87,7 @@ public class FilteringTest {
     }
 
     @Test
-    public void anyMatch() throws Exception {
+    public void anyMatch()  {
         int[] evenAndOneOdd = {2, 4, 6, 9, 10,4};
         boolean anyMatch = Arrays.stream(evenAndOneOdd)
                 .anyMatch(n -> (n % 2 == 1));

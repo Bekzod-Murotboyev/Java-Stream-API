@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class GettingStartedTest {
+public class ImperativeAndDeclarative {
 
     @Test
     public void imperativeApproach() throws IOException {
